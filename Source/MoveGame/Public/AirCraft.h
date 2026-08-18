@@ -73,8 +73,11 @@ public:
 	EAirCraftState CurrentState;
 
 	int32 CurrentIMCIndex;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Move")
 	float MoveSpeed;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Move")
 	float RotationSpeed;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Move")
 	float Gravity;
 	float GravityAcceleration;
 };

@@ -32,8 +32,6 @@ public:
 	UBoxComponent* BoxCollision;
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Spawning")
 	UDataTable* PlatformDataTable;
-
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Spawning")
 	int32 SpawnCount;
-	float PlatformDistance;
-
 };

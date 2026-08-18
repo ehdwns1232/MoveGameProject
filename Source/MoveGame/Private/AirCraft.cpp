@@ -23,7 +23,7 @@ AAirCraft::AAirCraft()
 
 	SpringArm = CreateDefaultSubobject<USpringArmComponent>(TEXT("SpringArm"));
 	SpringArm->SetupAttachment(BoxCollision);
-	SpringArm->TargetArmLength = 300.0f;
+	SpringArm->TargetArmLength = 500.0f;
 	SpringArm->SetRelativeLocation(FVector(0.0f, 0.0f, 50.0f));
 	SpringArm->bUsePawnControlRotation = false;
 
@@ -100,6 +100,7 @@ void AAirCraft::ApplyGravity(float DeltaTime)
 	}
 }
 
+// R키누르면 지상,공중 모드 변경
 void AAirCraft::ChangeIMC()
 {
 	APlayerController* PlayerController = Cast<APlayerController>(GetController());

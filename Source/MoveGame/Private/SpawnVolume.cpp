@@ -4,7 +4,7 @@
 
 ASpawnVolume::ASpawnVolume()
 {
-	PrimaryActorTick.bCanEverTick = true;
+	PrimaryActorTick.bCanEverTick = false;
 
 	Scene = CreateDefaultSubobject<USceneComponent>(TEXT("Root"));
 	SetRootComponent(Scene);
@@ -14,7 +14,6 @@ ASpawnVolume::ASpawnVolume()
 
 	SpawnCount = 100;
 	PlatformDataTable = nullptr;
-	PlatformDistance = 100.0f;
 }
 
 FVector ASpawnVolume::GetRandomPointInVolume() const

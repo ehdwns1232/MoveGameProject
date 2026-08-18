@@ -28,7 +28,7 @@ public:
 	UBoxComponent* BoxCollision;
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Components")
 	UStaticMeshComponent* StaticMesh;
-	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Components")
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Components")
 	TArray<UMaterial*> MaterialList;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Rotation")
